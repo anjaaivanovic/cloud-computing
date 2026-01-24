@@ -1,0 +1,5 @@
+csv_file: 
+  class: File
+  path: ../data/HousingData.csv
+column_name: TAX
+k: 5
