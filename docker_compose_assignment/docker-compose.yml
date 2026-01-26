@@ -1,6 +1,6 @@
 services:
   db:
-    image: mysql:8.0
+    image: anjaaivanovic/library-db
     container_name: library-db
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
       - library-network
 
   app:
-    build: .
+    image: anjaaivanovic/library-app
     container_name: library-app
     depends_on:
       db:
