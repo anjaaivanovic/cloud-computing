@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: crossval-config
+data:
+  DATASET_PATH: "HousingData.csv"
+  TARGET_COLUMN: "TAX"
+  NUM_FOLDS: "5"
